@@ -1,0 +1,32 @@
+.welcome-bg {
+  --background: linear-gradient(to bottom, #007bff, #0056b3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .container {
+    text-align: center;
+    padding: 20px;
+    color: #fff;
+
+    .logo {
+      width: 100px;
+      margin: 0 auto 20px;
+    }
+
+    h1 {
+      font-size: 2em;
+      margin-bottom: 0.3em;
+    }
+
+    .subtitle {
+      font-style: italic;
+      margin-bottom: 2em;
+      opacity: 0.8;
+    }
+
+    ion-button {
+      margin-top: 10px;
+    }
+  }
+}
