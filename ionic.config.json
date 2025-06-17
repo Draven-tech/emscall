@@ -1,0 +1,7 @@
+{
+  "name": "emscall",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
