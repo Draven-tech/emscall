@@ -1,0 +1,17 @@
+.login-bg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .container {
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+  }
+
+  .register-link {
+    margin-top: 15px;
+    font-size: 0.9em;
+    color: #ffffffa0;
+  }
+}
