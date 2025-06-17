@@ -1,17 +1,41 @@
 .dashboard-bg {
+  --background: #f8f9fa;
   text-align: center;
+  padding: 20px;
 
   h2 {
-    margin-top: 20px;
+    margin: 24px 0 8px;
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #2c3e50;
   }
 
   p {
-    margin-bottom: 20px;
-    color: #666;
+    margin-bottom: 32px;
+    color: #7f8c8d;
+    font-size: 1.1rem;
+  }
+
+  ion-grid {
+    max-width: 600px;
+    margin: 0 auto;
   }
 
   ion-button {
     font-size: 1.1em;
-    height: 60px;
+    height: 80px;
+    font-weight: 500;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+    margin: 8px 0;
+
+    &:active {
+      transform: scale(0.98);
+    }
+  }
+
+  ion-col {
+    padding: 8px;
   }
 }

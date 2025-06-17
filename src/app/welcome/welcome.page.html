@@ -1,14 +1,16 @@
-<ion-content class="ion-padding welcome-bg">
+<ion-content class="welcome-bg">
   <div class="container">
     <img src="assets/logo.png" alt="EMSCall Logo" class="logo" />
-    <h1>Welcome to <strong>EMSCall</strong></h1>
-    <p class="subtitle">Because every second counts</p>
+    <h1>Emergency Services<br><strong>At Your Fingertips</strong></h1>
+    <p class="subtitle">Rapid response when every second counts</p>
 
-    <ion-button expand="block" shape="round" color="primary" routerLink="/login">
+    <ion-button expand="block" shape="round" color="light" routerLink="/login">
+      <ion-icon slot="start" name="log-in-outline"></ion-icon>
       Login
     </ion-button>
 
     <ion-button expand="block" shape="round" fill="outline" color="light" routerLink="/register">
+      <ion-icon slot="start" name="person-add-outline"></ion-icon>
       Register
     </ion-button>
   </div>
