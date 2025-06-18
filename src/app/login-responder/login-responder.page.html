@@ -1,11 +1,6 @@
-<ion-header>
-  <ion-toolbar color="primary">
-    <ion-title>Login</ion-title>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content class="login-bg">
   <div class="container">
+    <img src="assets/logo2.png" alt="EMSCall Logo" class="logo" />
     <h2>Welcome Back</h2>
 
     <ion-item>
@@ -18,8 +13,8 @@
       <ion-input type="password" [(ngModel)]="password"></ion-input>
     </ion-item>
 
-    <ion-button expand="block" (click)="login()">Login</ion-button>
+    <ion-button expand="block" (click)="login()" class="login-btn">Login</ion-button>
 
-    <p class="register-link">Don't have an account? <a routerLink="/register">Register</a></p>
+    <p class="register-link">Don't have an account? <a routerLink="/register-responder">Register</a></p>
   </div>
 </ion-content>

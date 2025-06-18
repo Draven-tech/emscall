@@ -1,6 +1,6 @@
 <ion-header>
   <ion-toolbar color="primary">
-    <ion-title>EMSCall Dashboard</ion-title>
+    <ion-title>DISPATCH Dashboard</ion-title>
     <ion-buttons slot="end">
       <ion-button (click)="logout()">
         <ion-icon slot="icon-only" name="log-out-outline"></ion-icon>
@@ -10,19 +10,19 @@
 </ion-header>
 
 <ion-content class="dashboard-bg">
-  <h2>Welcome to EMSCall</h2>
+  <h2>Welcome to DISPATCH</h2>
   <p>Quickly connect with emergency services</p>
 
   <ion-grid>
     <ion-row>
       <ion-col size="12" size-md="6">
-        <ion-button expand="block" color="danger">
+        <ion-button expand="block" color="danger" class="emergency-btn">
           <ion-icon name="alert-circle" slot="start"></ion-icon>
           Police Emergency
         </ion-button>
       </ion-col>
       <ion-col size="12" size-md="6">
-        <ion-button expand="block" color="warning">
+        <ion-button expand="block" color="warning" class="emergency-btn">
           <ion-icon name="flame" slot="start"></ion-icon>
           Fire Department
         </ion-button>
@@ -30,13 +30,13 @@
     </ion-row>
     <ion-row>
       <ion-col size="12" size-md="6">
-        <ion-button expand="block" color="tertiary">
+        <ion-button expand="block" color="tertiary" class="emergency-btn">
           <ion-icon name="medkit" slot="start"></ion-icon>
           Medical Emergency
         </ion-button>
       </ion-col>
       <ion-col size="12" size-md="6">
-        <ion-button expand="block" color="medium">
+        <ion-button expand="block" color="medium" class="emergency-btn">
           <ion-icon name="construct" slot="start"></ion-icon>
           Traffic Control
         </ion-button>
@@ -49,7 +49,7 @@
       <ion-card-title>Emergency?</ion-card-title>
     </ion-card-header>
     <ion-card-content>
-      <ion-button expand="block" color="danger" fill="outline" size="large">
+      <ion-button expand="block" color="danger" fill="outline" size="large" class="sos-btn">
         <ion-icon name="alert" slot="start"></ion-icon>
         SOS Emergency Call
       </ion-button>

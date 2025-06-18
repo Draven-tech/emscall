@@ -1,13 +1,13 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
   standalone: false,
-  selector: 'app-register',
-  templateUrl: './register.page.html',
-  styleUrls: ['./register.page.scss'],
+  selector: 'app-register-citizen',
+  templateUrl: './register-citizen.page.html',
+  styleUrls: ['./register-citizen.page.scss'],
 })
-export class RegisterPage {
+export class RegisterCitizenPage implements OnInit {
   name: string = '';
   phone: string = '';
   password: string = '';
@@ -15,10 +15,14 @@ export class RegisterPage {
 
   constructor(private router: Router) {}
 
+  ngOnInit() {
+  }
+
   register() {
     if (this.password === this.confirmPassword) {
       // Simulate success
       this.router.navigate(['/dashboard']);
     }
   }
+
 }

@@ -1,11 +1,6 @@
-<ion-header>
-  <ion-toolbar color="primary">
-    <ion-title>Register</ion-title>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content class="register-bg">
   <div class="container">
+    <img src="assets/logo.png" alt="EMSCall Logo" class="logo" />
     <h2>Create Account</h2>
 
     <ion-item>
@@ -28,8 +23,8 @@
       <ion-input type="password" [(ngModel)]="confirmPassword" autocomplete="new-password"></ion-input>
     </ion-item>
 
-    <ion-button expand="block" (click)="register()">Create Account</ion-button>
+    <ion-button expand="block" (click)="register()" class="register-btn">Create Account</ion-button>
 
-    <p class="login-link">Already have an account? <a routerLink="/login">Login</a></p>
+    <p class="login-link">Already have an account? <a routerLink="/login-responder">Login</a></p>
   </div>
 </ion-content>

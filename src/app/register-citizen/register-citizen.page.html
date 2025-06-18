@@ -1,0 +1,30 @@
+<ion-content class="register-bg">
+  <div class="container">
+    <img src="assets/logo.png" alt="EMSCall Logo" class="logo" />
+    <h2>Create Account</h2>
+
+    <ion-item>
+      <ion-label position="floating">Full Name</ion-label>
+      <ion-input type="text" [(ngModel)]="name" autocomplete="name"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">Phone Number</ion-label>
+      <ion-input type="tel" [(ngModel)]="phone" inputmode="tel" autocomplete="tel"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">Password</ion-label>
+      <ion-input type="password" [(ngModel)]="password" autocomplete="new-password"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">Confirm Password</ion-label>
+      <ion-input type="password" [(ngModel)]="confirmPassword" autocomplete="new-password"></ion-input>
+    </ion-item>
+
+    <ion-button expand="block" (click)="register()" class="register-btn">Create Account</ion-button>
+
+    <p class="login-link">Already have an account? <a routerLink="/login-citizen">Login</a></p>
+  </div>
+</ion-content>

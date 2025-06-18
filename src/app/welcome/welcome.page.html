@@ -1,17 +1,20 @@
 <ion-content class="welcome-bg">
   <div class="container">
     <img src="assets/logo.png" alt="EMSCall Logo" class="logo" />
-    <h1>Emergency Services<br><strong>At Your Fingertips</strong></h1>
+    <h1 class="emergency-text">Emergency Services</h1><br><br>
+
+    <h1><strong>At Your Fingertips</strong></h1>
     <p class="subtitle">Rapid response when every second counts</p>
 
-    <ion-button expand="block" shape="round" color="light" routerLink="/login">
-      <ion-icon slot="start" name="log-in-outline"></ion-icon>
-      Login
+    <ion-button expand="block" shape="round" color="primary" routerLink="/login-responder" class="button-responder">
+      <ion-icon slot="start" name="shield-checkmark-outline"></ion-icon>
+      Responder Login
     </ion-button>
 
-    <ion-button expand="block" shape="round" fill="outline" color="light" routerLink="/register">
-      <ion-icon slot="start" name="person-add-outline"></ion-icon>
-      Register
+    <ion-button expand="block" shape="round" color="secondary" routerLink="/login-citizen" class="button-citizen">
+      <ion-icon slot="start" name="people-outline"></ion-icon>
+      Citizen Login
     </ion-button>
+    
   </div>
 </ion-content>
